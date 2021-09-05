@@ -22,7 +22,7 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintBottom_toTopOf="@+id/swipeUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
@@ -44,7 +44,26 @@
             android:layout_marginTop="15dp" />
 
 
+
     </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/swipeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bgswipeup"
+        android:gravity="center"
+        android:text="Swipe Up"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
